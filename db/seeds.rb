@@ -5,3 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'faker'
+
+5.times do
+  Passenger.create(name: Faker::Name.first_name)
+end
+5.times do
+  Taxi.create(name: Faker::Name.first_name)
+end
+
+20.times do
+  Ride.create(passenger_id: rand(1..5), taxi_id: rand(1..5))
+end

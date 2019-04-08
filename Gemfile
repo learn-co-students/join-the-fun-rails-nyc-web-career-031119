@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem 'faker'
 gem 'rails', '5.0.7.1'
 gem 'coffee-rails'
 gem 'jquery-rails'
